@@ -37,6 +37,7 @@ $result = $conexao->query($sql);
                 <th scope="col">questa </th>
                 <th scope="col">nivel </th>
                 <th scope="col">gabarito </th>
+                <th scope="col">Escolha </th>
             </tr>
         </thead>
         <thead>
@@ -48,6 +49,7 @@ $result = $conexao->query($sql);
                     echo "<td>".$user_data['questao']."</td>";
                     echo "<td>".$user_data['nivel']."</td>";
                     echo "<td>".$user_data['gabarito']."</td>";
+                    echo "<td><a href='senac.php?id=$user_data[id_questoes]' class='btn-sm btn btn-primary'>enviar</a></td>";
                     echo "</tr>";  
                  }
             ?>
